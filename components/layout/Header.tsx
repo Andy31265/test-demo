@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
       </Link>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex items-center flex-1 justify-center">
+      <div className="hidden md:flex items-center flex-1 justify-center max-w-2xl">
         <Menu
           mode="horizontal"
           selectedKeys={[location.pathname]}
@@ -40,7 +40,9 @@ export const Header: React.FC = () => {
             key: item.key,
             label: <Link to={item.key}>{item.label}</Link>
           }))}
-          className="border-none bg-transparent min-w-[400px] justify-center text-base font-medium"
+          className="border-none bg-transparent w-full justify-center text-base font-medium"
+          style={{ minWidth: '500px' }}
+          overflowedIndicator={null}
         />
       </div>
 
