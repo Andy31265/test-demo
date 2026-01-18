@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
       {/* Logo */}
       <Link to={PATHS.HOME} className="flex items-center gap-2">
         <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">D</span>
+          <span className="text-white font-bold text-lg">D</span>
         </div>
         <span className="text-xl font-bold text-emerald-800 tracking-tight">
           Datnen<span className="text-emerald-600">baoloc</span>.vn
@@ -48,15 +48,15 @@ export const Header: React.FC = () => {
 
       {/* Desktop Actions */}
       <div className="hidden md:flex items-center gap-3">
-        <Button 
-          type="primary" 
-          icon={<PlusCircleOutlined />} 
+        <Button
+          type="primary"
+          icon={<PlusCircleOutlined />}
           className="bg-emerald-600 hover:bg-emerald-500 border-none"
           onClick={() => navigate(PATHS.SUBMIT_PROPERTY)}
         >
           Đăng Tin
         </Button>
-        <Button 
+        <Button
           icon={<PhoneOutlined />}
           className="border-emerald-600 text-emerald-600 hover:text-emerald-500"
           href="tel:0901234567"
@@ -67,10 +67,10 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <Button 
-          type="text" 
-          icon={<MenuOutlined className="text-xl" />} 
-          onClick={() => setMobileMenuOpen(true)} 
+        <Button
+          type="text"
+          icon={<MenuOutlined className="text-xl" />}
+          onClick={() => setMobileMenuOpen(true)}
         />
       </div>
 
@@ -92,9 +92,9 @@ export const Header: React.FC = () => {
           className="border-none"
         />
         <div className="p-4 flex flex-col gap-3 mt-4 border-t border-gray-100">
-          <Button 
-            type="primary" 
-            block 
+          <Button
+            type="primary"
+            block
             icon={<PlusCircleOutlined />}
             className="bg-emerald-600"
             onClick={() => {

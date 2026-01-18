@@ -30,41 +30,41 @@ export const HomePage: React.FC = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[500px] md:h-[600px] flex items-center justify-center bg-gray-900 overflow-hidden">
-        <img 
-          src="https://picsum.photos/1920/1080?blur=2" 
-          className="absolute inset-0 w-full h-full object-cover opacity-40" 
+      <section className="relative h-[600px] md:h-[600px] flex items-center justify-center bg-gray-900 overflow-hidden ">
+        <img
+          src="https://picsum.photos/1920/1080?blur=2"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
           alt="Bao Loc Landscape"
         />
         <div className="relative z-10 container mx-auto px-4 text-center">
           <Title className="!text-white text-3xl md:text-5xl md:leading-tight mb-6 drop-shadow-lg">
-            Khám Phá Bất Động Sản<br/> <span className="text-emerald-400">Tiềm Năng Tại Bảo Lộc</span>
+            Khám Phá Bất Động Sản<br /> <span className="text-emerald-400">Tiềm Năng Tại Bảo Lộc</span>
           </Title>
           <Text className="text-gray-200 text-lg md:text-xl block mb-10 max-w-2xl mx-auto drop-shadow-md">
             Hơn 1000+ lô đất nền, biệt thự nghỉ dưỡng và dự án đầu tư sinh lời cao đang chờ đón bạn.
           </Text>
-          
+
           <div className="bg-white p-4 rounded-xl shadow-2xl max-w-4xl mx-auto flex flex-col md:flex-row gap-4">
-             <Input 
-                size="large" 
-                placeholder="Tìm kiếm theo tên đường, khu vực..." 
-                prefix={<SearchOutlined className="text-gray-400" />}
-                className="flex-grow"
-             />
-             <Select
-                size="large"
-                placeholder="Chọn khu vực"
-                className="w-full md:w-48"
-                options={LOCATIONS}
-             />
-             <Button 
-                type="primary" 
-                size="large" 
-                className="bg-emerald-600 hover:bg-emerald-500 w-full md:w-auto px-8"
-                onClick={() => navigate(PATHS.PROPERTIES)}
-             >
-                Tìm Kiếm
-             </Button>
+            <Input
+              size="large"
+              placeholder="Tìm kiếm theo tên đường, khu vực..."
+              prefix={<SearchOutlined className="text-gray-400" />}
+              className="flex-grow"
+            />
+            <Select
+              size="large"
+              placeholder="Chọn khu vực"
+              className="w-full md:w-48"
+              options={LOCATIONS}
+            />
+            <Button
+              type="primary"
+              size="large"
+              className="bg-emerald-600 hover:bg-emerald-500 w-full md:w-auto px-8"
+              onClick={() => navigate(PATHS.PROPERTIES)}
+            >
+              Tìm Kiếm
+            </Button>
           </div>
         </div>
       </section>
@@ -137,9 +137,9 @@ export const HomePage: React.FC = () => {
               {projects?.slice(0, 2).map(project => (
                 <Col key={project.id} xs={24} md={12}>
                   <div className="group relative rounded-2xl overflow-hidden cursor-pointer h-[300px]" onClick={() => navigate(`${PATHS.PROJECTS}`)}>
-                    <img 
-                      src={project.masterPlan} 
-                      alt={project.name} 
+                    <img
+                      src={project.masterPlan}
+                      alt={project.name}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent p-6 flex flex-col justify-end">
