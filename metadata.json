@@ -1,0 +1,7 @@
+{
+  "name": "Datnenbaoloc.vn",
+  "description": "A comprehensive real estate platform for Bao Loc, connecting buyers and sellers with advanced search, project showcases, and property submission tools.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
